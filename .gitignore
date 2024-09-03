@@ -1,0 +1,5 @@
+.idea
+wp.db
+*.pyc
+__pycache__
+migration

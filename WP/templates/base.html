@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <!-- WP CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hello, Sang Jin!</title>
+</head>
+<body>
+
+<!--네비게이션바 (include, 네이게이션바처럼 고정된 중복, 반복해서 사용할경우 적용)-->
+{% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+<!-- 자바스크립트 Start -->
+<!-- 자바스크립트는 순서상 마지막, html을 모두 렌더링 한후 실행되어야 오류가 없기 때문에 </body> 바로 위에 코드를 입력 -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+
+</body>
+</html>
