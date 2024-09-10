@@ -19,6 +19,10 @@
 # flask run
 # flask run --host=0.0.0.0 : 접속 ip
 
+# export FLASK_APP=WP
+# export FLASK_DEBUG=true
+# export APP_CONFIG_FILE=/home/ubuntu/projects/WP/config/production.py
+
 # #https://github.com/systemmers/first_web.git
 
 from flask import Flask
